@@ -26,8 +26,8 @@ const Hero = () => {
                 </div>
 
                 <div className="images">
-                    <img className="img-back" src="/images/iphone-mybudget_desktop.svg" alt="iphone my budget" />
-                    <img className="img-front" src="/images/iphone-yourcards_desktop.svg" alt="iphone your cards" />
+                    <img className="img-back" src="/images/iPhone-mybudget_desktop.svg" alt="iphone my budget" />
+                    <img className="img-front" src="/images/iPhone-yourcards_desktop.svg" alt="iphone your cards" />
                 </div>
             </div>
 

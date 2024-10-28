@@ -432,6 +432,10 @@ footer {
     }
 
     @media (min-width: 1400px) {
+
+        .hidden {
+            display: block !important;
+        }
         .container {
             display: flex;
             justify-content: space-between;
