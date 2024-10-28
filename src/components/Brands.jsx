@@ -8,39 +8,39 @@ const Brands = () => {
             <div className="container">
                 <div id="brand-1">
                     <div className="brand-box">
-                        <img src="images/brand/brand.svg" alt="logoipsum brand" />
+                        <img src="/images/brand/brand.svg" alt="logoipsum brand" />
                     </div>
                 </div>
                 <div id="brand-2">
                     <div className="brand-box">
-                        <img src="images/brand/brand2.svg" alt="logoipsum brand" />
+                        <img src="/images/brand/brand2.svg" alt="logoipsum brand" />
                     </div>
                 </div>
                 <div id="brand-3">
                     <div className="brand-box">
-                        <img src="images/brand/brand3.svg" alt="logoipsum brand" />
+                        <img src="/images/brand/brand3.svg" alt="logoipsum brand" />
                     </div>
                 </div>
                 <div id="brand-4">
                     <div className="brand-box">
-                        <img src="images/brand/brand4.svg" alt="logoipsum brand" />
+                        <img src="/images/brand/brand4.svg" alt="logoipsum brand" />
                     </div>
                 </div>
                 <div id="brand-5">
                     <div className="brand-box">
-                        <img src="images/brand/brand5.svg" alt="logoipsum brand" />
+                        <img src="/images/brand/brand5.svg" alt="logoipsum brand" />
                     </div>
                 </div>
                 <div id="brand-6">
                     <div className="brand-box">
-                        <img src="images/brand/brand6.svg" alt="logoipsum brand" />
+                        <img src="/images/brand/brand6.svg" alt="logoipsum brand" />
                     </div>
                 </div>
             </div>
 
             <div className="container-2">
                 <div className="images hidden">
-                    <img className="img-back" src="images/iphone-features.svg" alt="iphone features" />
+                    <img className="img-back" src="/images/iphone-features.svg" alt="iphone features" />
                 </div>
 
                 <div className="features">
@@ -54,7 +54,7 @@ const Brands = () => {
                     <div className="content">
                         <div className="icon-wrapper">
                             <div className="icon-image">
-                                <img src="images/icon-payment.svg" className="icon-image" alt="payment icon" />
+                                <img src="/images/icon-payment.svg" className="icon-image" alt="payment icon" />
                                 <div className="icon-text-content">
                                     <h5>Easy Payments</h5>
                                     <p className="icon-text">Id mollis consectetur congue egestas egestas suspendisse
@@ -62,7 +62,7 @@ const Brands = () => {
                                 </div>
                             </div>
                             <div className="icon-image">
-                                <img src="images/icon-shield.svg" className="icon-image" alt="payment icon" />
+                                <img src="/images/icon-shield.svg" className="icon-image" alt="payment icon" />
                                 <div className="icon-text-content">
                                     <h5>Data Security</h5>
                                     <p className="icon-text">Augue pulvinar justo, fermentum fames aliquam accumsan
@@ -70,7 +70,7 @@ const Brands = () => {
                                 </div>
                             </div>
                             <div className="icon-image">
-                                <img src="images/icon-statistics.svg" className="icon-image" alt="payment icon" />
+                                <img src="/images/icon-statistics.svg" className="icon-image" alt="payment icon" />
                                 <div className="icon-text-content">
                                     <h5>Cost Statistics</h5>
                                     <p className="icon-text">Mattis urna ultricies non amet, purus in auctor non. Odio
@@ -78,7 +78,7 @@ const Brands = () => {
                                 </div>
                             </div>
                             <div className="icon-image">
-                                <img src="images/icon-support.svg" className="icon-image" alt="payment icon" />
+                                <img src="/images/icon-support.svg" className="icon-image" alt="payment icon" />
                                 <div className="icon-text-content">
                                     <h5>Support 24/7</h5>
                                     <p className="icon-text">A elementum, imperdiet enim, pretium etiam facilisi in
@@ -86,7 +86,7 @@ const Brands = () => {
                                 </div>
                             </div>
                             <div className="icon-image">
-                                <img src="images/icon-cashback.svg" className="icon-image" alt="payment icon" />
+                                <img src="/images/icon-cashback.svg" className="icon-image" alt="payment icon" />
                                 <div className="icon-text-content">
                                     <h5>Regular Cashback</h5>
                                     <p className="icon-text">Sit facilisis dolor arcu, fermentum vestibulum arcu
@@ -94,7 +94,7 @@ const Brands = () => {
                                 </div>
                             </div>
                             <div className="icon-image">
-                                <img src="images/icon-standards.svg" className="icon-image" alt="payment icon" />
+                                <img src="/images/icon-standards.svg" className="icon-image" alt="payment icon" />
                                 <div className="icon-text-content">
                                     <h5>Top Standards</h5>
                                     <p className="icon-text">Faucibus cursus maecenas lorem cursus nibh. Sociis sit

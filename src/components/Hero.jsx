@@ -13,8 +13,8 @@ const Hero = () => {
                     <p>We offer you a new generation of the mobile banking. Save, spend & manage money in your
                         pocket.</p>
                     <div className="buttons">
-                        <a className="btn-download-app" href="#"><img src="images/appstore.svg" alt="appstore" /></a>
-                        <a className="btn-download-app" href="#"><img src="images/googleplay.svg" alt="googleplay" /></a>
+                        <a className="btn-download-app" href="#"><img src="/images/appstore.svg" alt="appstore" /></a>
+                        <a className="btn-download-app" href="#"><img src="/images/googleplay.svg" alt="googleplay" /></a>
                     </div>
 
                     <a href="#" className="discover-more">
@@ -26,8 +26,8 @@ const Hero = () => {
                 </div>
 
                 <div className="images">
-                    <img className="img-back" src="images/iphone-mybudget_desktop.svg" alt="iphone my budget" />
-                    <img className="img-front" src="images/iphone-yourcards_desktop.svg" alt="iphone your cards" />
+                    <img className="img-back" src="/images/iphone-mybudget_desktop.svg" alt="iphone my budget" />
+                    <img className="img-front" src="/images/iphone-yourcards_desktop.svg" alt="iphone your cards" />
                 </div>
             </div>
 

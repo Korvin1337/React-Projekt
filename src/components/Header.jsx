@@ -4,7 +4,7 @@ const Header = () => {
     return (
         <header>
             <div className="container">
-                <a href="index.html"><img src="images/logo.svg" alt="Silicion Logotype" /></a>
+                <a href="index.html"><img src="/images/logo.svg" alt="Silicion Logotype" /></a>
 
                 <nav id="main-menu" className="navbar">
                     <a className="nav-link" href="#">Features</a>
@@ -21,7 +21,7 @@ const Header = () => {
 
                 <a id="auth-signin" href="#" className="btn-primary">
                     <i className="center-text">
-                        <img src="images/icon-l.svg" alt="person icon" />
+                        <img src="/images/icon-l.svg" alt="person icon" />
                         <span>Sign in / up</span>
                     </i>
                 </a>

@@ -5,12 +5,12 @@ const Subscribe = () => {
         <section id="subscribe">
             <div className="container">
                 <div className="icon-bell-text">
-                    <img className="icon-bell-image" src="images/icon-bell.svg" alt="icon bell" />
+                    <img className="icon-bell-image" src="/images/icon-bell.svg" alt="icon bell" />
                         <h3 className="subscribe-heading">Subscribe to our newsletter to stay informed about latest updates
                         </h3>
                 </div>
                 <div className="icon-bell-text-tablet-mobile">
-                    <img className="icon-bell-image" src="images/icon-bell.svg" alt="icon bell" />
+                    <img className="icon-bell-image" src="/images/icon-bell.svg" alt="icon bell" />
                         <h3 className="subscribe-heading">Subscribe to our newsletter</h3>
                 </div>
                 <div className="subscribe-input-div">

@@ -1,4 +1,90 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
+
+const Faq = () => {
+    const [faqs, setFaqs] = useState([]);
+    const [openIndex, setOpenIndex] = useState(null);
+
+    const toggleDropdown = (index) => {
+        setOpenIndex(openIndex === index ? null : index);
+    };
+
+    // Fetch FAQs from the API
+    useEffect(() => {
+        const fetchFaqs = async () => {
+            try {
+                const response = await fetch('https://win24-assignment.azurewebsites.net/api/faq');
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                const data = await response.json();
+                setFaqs(data);
+            } catch (error) {
+                console.error('Error fetching FAQs:', error);
+            }
+        };
+
+        fetchFaqs();
+    }, []);
+
+    return (
+        <section id="faq">
+            <div className="container">
+                <div className="questions">
+                    <div className="text-questions">
+                        <h2 className="text-questions-h2">Any questions? Check out the FAQs</h2>
+                        <p className="text-questions-p">Still have unanswered questions and need to get in touch?</p>
+                    </div>
+                    <div className="question-boxes">
+                        <div className="question-box-1">
+                            <img src="/images/icon-contact-phone.svg" alt="a ringing phone" />
+                            <p className="question-box-p">Still have questions?</p>
+                            <a className="question-box-a">
+                                <i className="blue-text-arrow">
+                                    <span>Contact us <i className="fa-solid fa-arrow-right"></i></span>
+                                </i>
+                            </a>
+                        </div>
+                        <div className="question-box-2">
+                            <img className="question-box-image" src="/images/icon-contact-messages.svg" alt="text-message icon" />
+                            <p className="question-box-p">Don't like phone calls?</p>
+                            <a className="question-box-a">
+                                <i className="green-text-arrow">
+                                    <span className="hover">Contact us <i className="fa-solid fa-arrow-right"></i></span>
+                                </i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="dropdown-questions">
+                    {faqs.map((item, index) => (
+                        <span className={`dropdown-span-${openIndex === index ? 'open' : 'closed'}`} key={item.id} onClick={() => toggleDropdown(index)}>
+                            <div className="dropdown-span-h3-image">
+                                <h3 className="dropdown-span-h3">{item.title}</h3>
+                                <img className="dropdown-span-image" src={`/images/icon-dropdown-${openIndex === index ? 'open' : 'closed'}.svg`} alt="dropdown arrow" />
+                            </div>
+                            {openIndex === index && <p className="dropdown-span-text">{item.content}</p>}
+                        </span>
+                    ))}
+                </div>
+
+                <div id="contact-button">
+                    <a id="contact-button-inner" href="#" className="btn-primary mobile">
+                        <i className="center-text">
+                            <span className="contact-span-text">Contact us now</span>
+                        </i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    );
+}
+
+export default Faq;
+
+
+
+/*import React from 'react'
 
 const Faq = () => {
     return (
@@ -11,7 +97,7 @@ const Faq = () => {
                     </div>
                     <div className="question-boxes">
                         <div className="question-box-1">
-                            <img src="images/icon-contact-phone.svg" alt="a ringing phone" />
+                            <img src="/images/icon-contact-phone.svg" alt="a ringing phone" />
                                 <p className="question-box-p">Still have questions?</p>
                                 <a className="question-box-a">
                                     <i className="blue-text-arrow">
@@ -20,7 +106,7 @@ const Faq = () => {
                                 </a>
                         </div>
                         <div className="question-box-2">
-                            <img className="question-box-image" src="images/icon-contact-messages.svg"
+                            <img className="question-box-image" src="/images/icon-contact-messages.svg"
                                 alt="text-message icon" />
                                 <p className="question-box-p">Don't like phone calls?</p>
                                 <a className="question-box-a">
@@ -39,18 +125,18 @@ const Faq = () => {
                 <div className="dropdown-questions">
                     <span className="dropdown-span-closed">
                         <h3 className="dropdown-span-h3">Is any of my personal information stored in the App?</h3>
-                        <img className="dropdown-span-image" src="images/icon-dropdown-closed.svg"
+                        <img className="dropdown-span-image" src="/images/icon-dropdown-closed.svg"
                             alt="dropdown arrow closed" />
                     </span>
                     <span className="dropdown-span-closed">
                         <h3 className="dropdown-span-h3">What formats can I download my transaction history in?</h3>
-                        <img className="dropdown-span-image" src="images/icon-dropdown-closed.svg"
+                        <img className="dropdown-span-image" src="/images/icon-dropdown-closed.svg"
                             alt="dropdown arrow closed" />
                     </span>
                     <span className="dropdown-span-open">
                         <div className="dropdown-span-h3-image">
                             <h3 className="dropdown-span-h3">Can I schedule future transfers?</h3>
-                            <img className="dropdown-span-image" src="images/icon-dropdown-open.svg"
+                            <img className="dropdown-span-image" src="/images/icon-dropdown-open.svg"
                                 alt="dropdown arrow closed" />
                         </div>
                         <p className="dropdown-span-text">Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper.
@@ -62,18 +148,18 @@ const Faq = () => {
                     </span>
                     <span className="dropdown-span-closed">
                         <h3 className="dropdown-span-h3">When can I use Banking App services?</h3>
-                        <img className="dropdown-span-image" src="images/icon-dropdown-closed.svg"
+                        <img className="dropdown-span-image" src="/images/icon-dropdown-closed.svg"
                             alt="dropdown arrow closed" />
                     </span>
                     <span className="dropdown-span-closed">
                         <h3 className="dropdown-span-h3">Can I create my own password that is easy for me to remember?
                         </h3>
-                        <img className="dropdown-span-image" src="images/icon-dropdown-closed.svg"
+                        <img className="dropdown-span-image" src="/images/icon-dropdown-closed.svg"
                             alt="dropdown arrow closed" />
                     </span>
                     <span className="dropdown-span-closed">
                         <h3 className="dropdown-span-h3">What happens if I forget or lose my password?</h3>
-                        <img className="dropdown-span-image" src="images/icon-dropdown-closed.svg"
+                        <img className="dropdown-span-image" src="/images/icon-dropdown-closed.svg"
                             alt="dropdown arrow closed" />
                     </span>
                 </div>
@@ -82,7 +168,7 @@ const Faq = () => {
                     <span className="dropdown-span-open">
                         <div className="dropdown-span-h3-image">
                             <h3 className="dropdown-span-h3">Is any of my personal information stored in the App?</h3>
-                            <img className="dropdown-span-image" src="images/icon-dropdown-open.svg"
+                            <img className="dropdown-span-image" src="/images/icon-dropdown-open.svg"
                                 alt="dropdown arrow closed" />
                         </div>
                         <p className="dropdown-span-text p1">Nunc duis id aenean gravida tincidunt eu, tempor
@@ -100,35 +186,35 @@ const Faq = () => {
                     </span>
                     <span className="dropdown-span-closed">
                         <h3 className="dropdown-span-h3">What formats can I download my transaction history in?</h3>
-                        <img className="dropdown-span-image" src="images/icon-dropdown-closed.svg"
+                        <img className="dropdown-span-image" src="/images/icon-dropdown-closed.svg"
                             alt="dropdown arrow closed" />
                     </span>
                     <span className="dropdown-span-closed">
                         <h3 className="dropdown-span-h3">Can I schedule future transfers?</h3>
-                        <img className="dropdown-span-image" src="images/icon-dropdown-closed.svg"
+                        <img className="dropdown-span-image" src="/images/icon-dropdown-closed.svg"
                             alt="dropdown arrow closed" />
                     </span>
                     <span className="dropdown-span-closed">
                         <h3 className="dropdown-span-h3">When can I use Banking App services?</h3>
-                        <img className="dropdown-span-image" src="images/icon-dropdown-closed.svg"
+                        <img className="dropdown-span-image" src="/images/icon-dropdown-closed.svg"
                             alt="dropdown arrow closed" />
                     </span>
                     <span className="dropdown-span-closed">
                         <h3 className="dropdown-span-h3">Can I create my own password that is easy for me to remember?
                         </h3>
-                        <img className="dropdown-span-image" src="images/icon-dropdown-closed.svg"
+                        <img className="dropdown-span-image" src="/images/icon-dropdown-closed.svg"
                             alt="dropdown arrow closed" />
                     </span>
                     <span className="dropdown-span-closed">
                         <h3 className="dropdown-span-h3">What happens if I forget or lose my password?</h3>
-                        <img className="dropdown-span-image" src="images/icon-dropdown-closed.svg"
+                        <img className="dropdown-span-image" src="/images/icon-dropdown-closed.svg"
                             alt="dropdown arrow closed" />
                     </span>
                 </div>
 
                 <div className="tablet-question-boxes">
                     <div className="question-box-1">
-                        <img src="images/icon-contact-phone.svg" alt="a ringing phone" />
+                        <img src="/images/icon-contact-phone.svg" alt="a ringing phone" />
                             <p className="question-box-p">Still have questions?</p>
                             <a className="question-box-a">
                                 <i className="blue-text-arrow">
@@ -137,7 +223,7 @@ const Faq = () => {
                             </a>
                     </div>
                     <div className="question-box-2">
-                        <img className="question-box-image" src="images/icon-contact-messages.svg"
+                        <img className="question-box-image" src="/images/icon-contact-messages.svg"
                             alt="text-message icon" />
                             <p className="question-box-p">Don't like phone calls?</p>
                             <a className="question-box-a">
@@ -162,4 +248,4 @@ const Faq = () => {
     )
 }
 
-export default Faq
+export default Faq*/

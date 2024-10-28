@@ -7,12 +7,12 @@ const Slider = () => {
                 <h2>How Does It Work?</h2>
             </div>
             <div className="container">
-                <img className="img-slider" src="images/iPhone-slider-1.svg" alt="how it works iPhone" />
-                <img className="img-slider" src="images/iPhone-slider-2.svg" alt="how it works iPhone" />
-                <img className="img-slider" src="images/iPhone-slider-3.svg" alt="how it works iPhone" />
+                <img className="img-slider" src="/images/iPhone-slider-1.svg" alt="how it works iPhone" />
+                <img className="img-slider" src="/images/iPhone-slider-2.svg" alt="how it works iPhone" />
+                <img className="img-slider" src="/images/iPhone-slider-3.svg" alt="how it works iPhone" />
             </div>
             <div className="container phone">
-                <img className="img-slider" src="images/iPhone-slider-phone.svg" alt="how it works iPhone" />
+                <img className="img-slider" src="/images/iPhone-slider-phone.svg" alt="how it works iPhone" />
             </div>
             <div className="bottomline desktop">
                 <h3>Latest Transaction history</h3>
