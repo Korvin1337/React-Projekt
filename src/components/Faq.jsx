@@ -75,7 +75,7 @@ const Faq = () => {
                     ))}
                 </div>
 
-                <div id="contact-button">
+                <div id="contact-button" className="mobile-contact-button">
                     <a id="contact-button-inner" href="#" className="btn-primary mobile">
                         <i className="center-text">
                             <span className="contact-span-text">Contact us now</span>
@@ -112,6 +112,12 @@ const Faq = () => {
                         </i>
                     </a>
                 </div>
+
+
+
+
+
+
             </div>
         </section>
     );

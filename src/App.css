@@ -400,6 +400,16 @@ footer {
         }
     }
 
+    @media (min-width: 1px) and (max-width: 767px) {
+        .icon-image {
+            align-items: unset;
+        }
+
+        .icon-text-content {
+            text-align: start;
+        }
+    }
+
     @media (min-width: 1400px) {
 
         .headline h2 {
@@ -708,6 +718,18 @@ footer {
             color: #585C7B;
             font-size: 16px;
             font-weight: 400;
+        }
+    }
+
+    @media (min-width: 1px) and (max-width: 767px) {
+        .bottomline.phone {
+
+            h3 {
+                max-width: 21ch;
+                margin: 0 auto;
+                margin-bottom: .5rem;
+                margin-top: 2rem;
+            }
         }
     }
 
@@ -1088,6 +1110,7 @@ footer {
         display: none;
     }
 
+
     @media (max-width: 767px) {
 
         .dropdown-questions {
@@ -1354,6 +1377,30 @@ footer {
             }
         }
 
+    }
+
+    @media (min-width: 1px) and (max-width: 767px) {
+        #contact-button {
+            display: none;
+        }
+
+        .mobile-contact-button {
+            display: block !important;
+        }
+
+        #contact-button-inner {
+            height: 120% !important;
+            width: 58% !important;
+            margin: 0 auto !important;
+        }
+
+        .dropdown-questions {
+            display: block !important;
+
+            p {
+                margin-top: .8rem;
+            }
+        }
     }
 
 
