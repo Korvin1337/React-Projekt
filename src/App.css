@@ -2736,4 +2736,36 @@ footer {
             }
         }
     }
+
+    @media (min-width: 1400px) {
+        .container {
+
+            .headline {
+
+                h1 {
+                    text-align: start;
+                    margin-bottom: -1rem;
+                    margin-top: 8rem;
+                }
+
+            }
+
+            .content {
+                p {
+                    color: var(--clr-body-text);
+                }
+
+                .buttons {
+                    margin-top: 4rem;
+                }
+
+                .discover-more {
+                    margin-top: 10rem;
+                    padding-top: 4rem;
+                }
+            }
+
+
+        }
+    }
 }
