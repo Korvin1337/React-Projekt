@@ -394,6 +394,35 @@ footer {
         gap: .5rem;
         align-items: center;
         padding-top: 2rem;
+
+        @media (min-width: 1400px) {
+            align-items: unset;
+        }
+    }
+
+    @media (min-width: 1400px) {
+
+        .headline h2 {
+            text-align: start;
+            font-weight: 900;
+            font-size: 40px;
+        }
+
+        .headline p {
+            text-align: start;
+        }
+
+        .icon-image-2 {
+            margin-left: 1.7rem;
+        }
+
+        .content {
+            text-align: start;
+
+            .icon-text-content {
+                margin-left: .8rem;
+            }
+        }
     }
 
     .icon-image img {
