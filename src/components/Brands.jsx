@@ -55,15 +55,15 @@ const Brands = () => {
                         <div className="icon-wrapper">
                             <div className="icon-image">
                                 <img src="/images/icon-payment.svg" className="icon-image" alt="payment icon" />
-                                <div className="icon-text-content">
+                                <div className="icon-text-content icon-text-content-1">
                                     <h5>Easy Payments</h5>
                                     <p className="icon-text">Id mollis consectetur congue egestas egestas suspendisse
                                         blandit justo.</p>
                                 </div>
                             </div>
-                            <div className="icon-image">
-                                <img src="/images/icon-shield.svg" className="icon-image" alt="payment icon" />
-                                <div className="icon-text-content">
+                            <div className="icon-image icon-image-2">
+                                <img src="/images/icon-shield.svg" className="icon-image icon-image-2-2" alt="payment icon" />
+                                <div className="icon-text-content  icon-text-content-2">
                                     <h5>Data Security</h5>
                                     <p className="icon-text">Augue pulvinar justo, fermentum fames aliquam accumsan
                                         vestibulum non.</p>
@@ -71,15 +71,15 @@ const Brands = () => {
                             </div>
                             <div className="icon-image">
                                 <img src="/images/icon-statistics.svg" className="icon-image" alt="payment icon" />
-                                <div className="icon-text-content">
+                                <div className="icon-text-content icon-text-content-1">
                                     <h5>Cost Statistics</h5>
                                     <p className="icon-text">Mattis urna ultricies non amet, purus in auctor non. Odio
                                         vulputate ac nibh.</p>
                                 </div>
                             </div>
-                            <div className="icon-image">
-                                <img src="/images/icon-support.svg" className="icon-image" alt="payment icon" />
-                                <div className="icon-text-content">
+                            <div className="icon-image icon-image-2">
+                                <img src="/images/icon-support.svg" className="icon-image icon-image-2-2" alt="payment icon" />
+                                <div className="icon-text-content icon-text-content-2">
                                     <h5>Support 24/7</h5>
                                     <p className="icon-text">A elementum, imperdiet enim, pretium etiam facilisi in
                                         aenean quam mauris.</p>
@@ -87,15 +87,15 @@ const Brands = () => {
                             </div>
                             <div className="icon-image">
                                 <img src="/images/icon-cashback.svg" className="icon-image" alt="payment icon" />
-                                <div className="icon-text-content">
+                                <div className="icon-text-content icon-text-content-1">
                                     <h5>Regular Cashback</h5>
                                     <p className="icon-text">Sit facilisis dolor arcu, fermentum vestibulum arcu
                                         elementum imperdiet eleifend.</p>
                                 </div>
                             </div>
-                            <div className="icon-image">
-                                <img src="/images/icon-standards.svg" className="icon-image" alt="payment icon" />
-                                <div className="icon-text-content">
+                            <div className="icon-image icon-image-2">
+                                <img src="/images/icon-standards.svg" className="icon-image icon-image-2-2" alt="payment icon" />
+                                <div className="icon-text-content icon-text-content-2">
                                     <h5>Top Standards</h5>
                                     <p className="icon-text">Faucibus cursus maecenas lorem cursus nibh. Sociis sit
                                         risus id. Sit facilisis dolor arcu.</p>
