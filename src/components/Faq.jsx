@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 const Faq = () => {
+    /* ChatGPT */
     const [faqs, setFaqs] = useState([]);
     const [openIndex, setOpenIndex] = useState(null);
 
@@ -81,7 +82,7 @@ const Faq = () => {
 }
 
 export default Faq;
-
+/* End of Chatgpt, Chatgpt converted my old code to work with the javascript code it made. */
 
 
 /*import React from 'react'

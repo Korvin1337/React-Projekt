@@ -14,7 +14,7 @@ const Subscribe = () => {
                         <h3 className="subscribe-heading">Subscribe to our newsletter</h3>
                 </div>
                 <div className="subscribe-input-div">
-                    <i className="fa-sharp fa-thin fa-envelope"></i>
+                    <i className="fa-regular fa-envelope"></i>
                     <input type="email" className="subscribe-input" placeholder="Your email" />
                         <a id="email-button-inner" href="#" className="btn-primary">
                             <i className="center-text">

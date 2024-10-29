@@ -6,6 +6,7 @@ import Slider from './components/Slider'
 import Features from './components/Features'
 import Reviews from './components/Reviews'
 import Faq from './components/Faq'
+import Subscribe from './components/Subscribe'
 import Footer from './components/Footer'
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Features />
         <Reviews />
         <Faq />
+        <Subscribe />
       </main>
       <Footer />
     </div>

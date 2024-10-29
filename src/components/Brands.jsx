@@ -40,7 +40,7 @@ const Brands = () => {
 
             <div className="container-2">
                 <div className="images hidden">
-                    <img className="img-back" src="/images/iPhone-features.svg" alt="iphone features" />
+                    <img className="img-back brand-img-phone" src="/images/iPhone-features.svg" alt="iphone features" />
                 </div>
 
                 <div className="features">

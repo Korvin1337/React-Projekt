@@ -18,9 +18,7 @@ const Hero = () => {
                     </div>
 
                     <a href="#" className="discover-more">
-                        <span className="btn-circle">
-                            <i className="fa-solid fa-chevron-down"></i>
-                        </span>
+                        <img className="dropdown-hero-closed" src="images/next-btn.svg" alt="discover more button" />
                         <span>Discover more</span>
                     </a>
                 </div>
