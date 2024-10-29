@@ -28,7 +28,7 @@ const Header = () => {
 
                 <button className="btn-mobile">
 
-                    <i className="fa-regular fa-bars"></i>
+                    <i className="fa-solid fa-bars"></i>
 
                 </button>
 
