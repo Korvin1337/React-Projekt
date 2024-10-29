@@ -2381,6 +2381,14 @@ footer {
 
     }
 
+    @media(min-width: 1px) and (max-width: 1399px) {
+        .fa-envelope {
+            margin-left: .5rem;
+            margin-right: .5rem;
+            opacity: 25%;
+        }
+    }
+
     /* Larger screens (desktop) */
     @media (min-width: 1400px) {
         .icon-bell-text {

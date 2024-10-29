@@ -57,6 +57,12 @@ const Faq = () => {
                     </div>
                 </div>
 
+                <div className="tablet-text-questions">
+                    <h2 className="text-questions-h2-1">Any questions?</h2>
+                    <h2 className="text-questions-h2-2">Check out the FAQs</h2>
+                    <p className="text-questions-p">Still have unanswered questions and need to get in touch?</p>
+                </div>
+
                 <div className="dropdown-questions">
                     {faqs.map((item, index) => (
                         <span className={`dropdown-span-${openIndex === index ? 'open' : 'closed'}`} key={item.id} onClick={() => toggleDropdown(index)}>
@@ -67,6 +73,36 @@ const Faq = () => {
                             {openIndex === index && <p className="dropdown-span-text">{item.content}</p>}
                         </span>
                     ))}
+                </div>
+
+                <div id="contact-button">
+                    <a id="contact-button-inner" href="#" className="btn-primary mobile">
+                        <i className="center-text">
+                            <span className="contact-span-text">Contact us now</span>
+                        </i>
+                    </a>
+                </div>
+
+                <div className="tablet-question-boxes">
+                    <div className="question-box-1">
+                        <img src="/images/icon-contact-phone.svg" alt="a ringing phone" />
+                            <p className="question-box-p">Still have questions?</p>
+                            <a className="question-box-a">
+                                <i className="blue-text-arrow">
+                                    <span>Contact us <i className="fa-solid fa-arrow-right"></i></span>
+                                </i>
+                            </a>
+                    </div>
+                    <div className="question-box-2">
+                        <img className="question-box-image" src="/images/icon-contact-messages.svg"
+                            alt="text-message icon" />
+                            <p className="question-box-p">Don't like phone calls?</p>
+                            <a className="question-box-a">
+                                <i className="green-text-arrow">
+                                    <span className="hover">Contact us <i className="fa-solid fa-arrow-right"></i></span>
+                                </i>
+                            </a>
+                    </div>
                 </div>
 
                 <div id="contact-button">
