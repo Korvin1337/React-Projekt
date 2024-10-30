@@ -2384,6 +2384,11 @@ footer {
         color: var(--clr-white);
     }
 
+    .center-text-subscribe {
+        text-align: center;
+        justify-content: center;
+    }
+
     /* Responsive Layouts */
     @media (min-width: 768px) {
         .icon-bell-text {

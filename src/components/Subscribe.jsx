@@ -1,6 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Subscribe = () => {
+
+    const [email, setEmail] = useState('')
+    const [isSubmitted, setIsSubmitted] = useState(false)
+
+    /* Chat gpt regex test */
+    const validateEmail = (email) => {
+        if (email.length <= 0) return false
+        const regex = /^[^\s@]{1,}@[^.\s@]{1,}\.[^\s@]{2,}.{0,47}$/;
+        return regex.test(email);
+    }
+    /* End of chatgpt regex test */
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        if (validateEmail(email)) {
+            setIsSubmitted(true);
+        } else {
+            alert('Please enter a valid email adress.');
+        }
+    }
+
+
     return (
         <section id="subscribe">
             <div className="container">
@@ -13,15 +35,20 @@ const Subscribe = () => {
                     <img className="icon-bell-image" src="/images/icon-bell.svg" alt="icon bell" />
                         <h3 className="subscribe-heading">Subscribe to our newsletter</h3>
                 </div>
+                {!isSubmitted ? (
                 <div className="subscribe-input-div">
                     <i className="fa-regular fa-envelope"></i>
-                    <input type="email" className="subscribe-input" placeholder="Your email" />
-                        <a id="email-button-inner" href="#" className="btn-primary">
+                    <input type="email" className="subscribe-input" placeholder="Your email" value={email} onChange={(e) => setEmail(e.target.value)} />
+                        <a id="email-button-inner" href="#" className="btn-primary" onClick={handleSubmit}>
                             <i className="center-text">
                                 <span className="contact-span-text">Subscribe</span>
                             </i>
                         </a>
-                </div>
+                </div> ) : (
+                    <div className="subscribe-input-div">
+                        <p className="center-text-subscribe">Thank you for subscribing!</p>
+                    </div>
+                )}
             </div>
         </section>
     )
