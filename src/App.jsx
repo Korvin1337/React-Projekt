@@ -1,3 +1,4 @@
+import React, { useState } from 'react'
 import './App.css'
 import Header from './components/Header'
 import Hero from './components/Hero'
@@ -11,19 +12,25 @@ import Footer from './components/Footer'
 
 function App() {
 
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  const toggleDarkMode = () => setIsDarkMode(!isDarkMode);
+
+
+
   return (
-    <div className="wrapper">
-      <Header />
+    <div className={`wrapper ${isDarkMode ? 'dark-mode' : ''}`}>
+      <Header toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode}/>
       <main>
-        <Hero />
-        <Brands />
-        <Slider />
-        <Features />
-        <Reviews />
-        <Faq />
-        <Subscribe />
+        <Hero isDarkMode={isDarkMode} />
+        <Brands isDarkMode={isDarkMode} />
+        <Slider isDarkMode={isDarkMode} />
+        <Features isDarkMode={isDarkMode} />
+        <Reviews isDarkMode={isDarkMode} />
+        <Faq isDarkMode={isDarkMode} />
+        <Subscribe isDarkMode={isDarkMode} />
       </main>
-      <Footer />
+      <Footer isDarkMode={isDarkMode} />
     </div>
   )
 }

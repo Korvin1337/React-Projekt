@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Brands = () => {
+const Brands = ({isDarkMode}) => {
     return (
-        <section id="brands">
+        <section id="brands" className={`${isDarkMode ? 'dark-mode' : ''}`}>
 
 
             <div className="container">

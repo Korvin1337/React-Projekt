@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const Faq = () => {
+const Faq = ({isDarkMode}) => {
     /* ChatGPT */
     const [faqs, setFaqs] = useState([]);
     const [openIndex, setOpenIndex] = useState(null);
@@ -28,7 +28,7 @@ const Faq = () => {
     }, []);
 
     return (
-        <section id="faq">
+        <section id="faq" className={`${isDarkMode ? 'dark-mode' : ''}`}>
             <div className="container">
                 <div className="questions">
                     <div className="text-questions">

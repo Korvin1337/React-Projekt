@@ -12,6 +12,7 @@
     --clr-divider-border: #E2E5F1;
     --clr-secondary: #EFF2FC;
     --clr-light-bg: #D9D9D9;
+    --clr-slider-bg:  #F3F8FF;
 
     --clr-white: #FFFFFF;
     --clr-black: #000000;
@@ -71,6 +72,10 @@ body {
     font-style: normal;
     font-size: 16px;
     background-color: hsl(0, 0%, 90%);
+}
+
+.dark-mode {
+    /*background-color: var(--clr-black);*/
 }
 
 
@@ -261,6 +266,11 @@ header .container {
     padding-bottom: 1rem;
 }
 
+header .btn-mobile:hover {
+    cursor: pointer;
+    opacity: .75;
+}
+
 
 
 
@@ -307,12 +317,18 @@ footer {
     .credit {
         display: none;
     }
+
+    .dark-mode {
+        background-color: #0b0f19;
+        color: #FFFFFF;
+        opacity: .5;
+    }
 }
 
 #brands {
     padding-top: 2rem;
     padding-bottom: 2rem;
-    background-color: #FFFFFF;
+    background-color: var(--clr-white);
 
     .container {
         display: none;
@@ -676,7 +692,7 @@ footer {
 
 
 #slider {
-    background-color: #F3F8FF;
+    background-color: var(--clr-slider-bg);
     padding-top: 2rem;
     padding-bottom: 2rem;
 
@@ -867,7 +883,7 @@ footer {
 
 #features-2 {
     display: none;
-    background-color: #ffffff;
+    background-color: var(--clr-white);
 
     @media (min-width: 1400px) {
         display: block;
@@ -977,7 +993,7 @@ footer {
 
 #reviews {
     display: none;
-    background-color: #D9D9D9;
+    background-color: var(--clr-light-bg);
 
     @media (min-width: 1400px) {
         display: block;
@@ -1100,7 +1116,7 @@ footer {
 
 
 #faq {
-    background-color: #FFFFFF;
+    background-color: var(--clr-white);
 
     #contact-button {
         display: none;
@@ -2283,7 +2299,7 @@ footer {
 /* Subscribe section made responsive with the help of chatgpt */
 
 #subscribe {
-    background-color: #FFFFFF;
+    background-color: var(--clr-white);
     padding-bottom: 4rem;
     margin-bottom: 4rem;
     padding-top: 2rem;
@@ -2857,3 +2873,119 @@ footer {
         }
     }
 }
+
+
+.dark-mode {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: var(--clr-white) !important;
+    }
+    p {
+        color: var(--clr-white) !important;
+        opacity: .7 !important;
+    }
+
+    main {
+        background-color: #242731 !important;
+    }
+}
+
+/* Dark Mode Styling */
+
+footer.dark-mode {
+    background-color: #0b0f19 !important;
+}
+
+#subscribe.dark-mode {
+    background-color: #0b0f19 !important;
+
+    .container {
+        background-color: #151822 !important;
+
+        .subscribe-input-div {
+            background-color: #151822 !important;
+            border: 1px solid #2b2f37 !important;
+
+            .fa-regular.fa-envelope {
+                color: #c5d9ff !important;
+            }
+        }
+    }
+}
+
+#faq.dark-mode {
+    background-color: #0b0f19 !important;
+
+    .dropdown-span-closed,
+    .dropdown-span-open {
+        background-color: #151822 !important;
+    }
+
+    .question-box-1,
+    .question-box-2 {
+        border: 1px solid #2b2f37 !important;
+    }
+}
+
+#reviews.dark-mode {
+    background-color: #151822 !important;
+
+    .review-box-1,
+    .review-box-2 {
+        background-color: #1e212b !important;
+    }
+}
+
+#features-2.dark-mode {
+    background-color: #0b0f19 !important;
+}
+
+#slider.dark-mode {
+    background-color: #151822 !important;
+}
+
+#brands.dark-mode {
+    background-color: #0b0f19 !important;
+
+    .brand-box {
+        border: 1px solid #22262e !important;
+    }
+}
+
+#hero.dark-mode {
+        background-color: #151822 !important;
+
+        .img-back,
+        .img-front {
+            z-index: auto !important;
+        }
+}
+
+header.dark-mode {
+    background-color: #242731 !important;
+
+    p,
+    a {
+        color: var(--clr-white);
+    }
+
+    span {
+        color: #565973 !important;
+    }
+}
+
+body.dark-mode {
+
+    /*.dark-mode {
+        background-color: #151822 !important;
+    }*/
+
+}
+
+
+
+

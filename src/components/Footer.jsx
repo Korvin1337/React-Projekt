@@ -1,8 +1,8 @@
 import React from "react";
 
-const Footer = () => {
+const Footer = ({isDarkMode}) => {
   return (
-    <footer>
+    <footer className={`${isDarkMode ? 'dark-mode' : ''}`}>
       <div className="footer-container">
         <div className="container">
           <p className="copyright">© 2024 Silicon. All rights reserved.</p>

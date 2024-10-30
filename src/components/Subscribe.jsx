@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const Subscribe = () => {
+const Subscribe = ({isDarkMode}) => {
 
     const [email, setEmail] = useState('')
     const [isSubmitted, setIsSubmitted] = useState(false)
@@ -24,7 +24,7 @@ const Subscribe = () => {
 
 
     return (
-        <section id="subscribe">
+        <section id="subscribe" className={`${isDarkMode ? 'dark-mode' : ''}`}>
             <div className="container">
                 <div className="icon-bell-text">
                     <img className="icon-bell-image" src="/images/icon-bell.svg" alt="icon bell" />
