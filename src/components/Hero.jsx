@@ -20,8 +20,11 @@ const Hero = ({isDarkMode}) => {
                                     </>
                                 ) : (
                                     <>
-                                    <a className="btn-download-app" href="#"><img className="dark-mode-image" src="/images/appstore-dark.svg" alt="appstore" /></a>
-                                    <a className="btn-download-app" href="#"><img className="dark-mode-image" src="/images/googleplay-dark.svg" alt="googleplay" /></a>
+                                    <a className="btn-download-app" href="#"><img src="/images/appstore.svg" alt="appstore" /></a>
+                                    <a className="btn-download-app" href="#"><img src="/images/googleplay.svg" alt="googleplay" /></a>
+
+                                    {/*<a className="btn-download-app" href="#"><img className="dark-mode-image" src="/images/appstore-dark.svg" alt="appstore" /></a>
+                                    <a className="btn-download-app" href="#"><img className="dark-mode-image" src="/images/googleplay-dark.svg" alt="googleplay" /></a> */}
                                     </>
                                 )}
                     </div>
