@@ -2963,6 +2963,79 @@ footer.dark-mode {
         .img-front {
             z-index: auto !important;
         }
+
+        .dropdown-hero-closed {
+            border-radius: 50% !important;
+        }
+
+        @media (min-width: 1px) and (max-width: 767px) {
+
+            .buttons {
+                margin: 0 !important;
+                padding: 0 !important;
+            }
+
+            .btn-download-app {
+                margin: 0 !important;
+                padding: 0 !important;
+                background-color: transparent !important;
+                width: 311px !important;
+                height: 60px !important;
+            }
+
+            .dark-mode-image {
+                width: 311px !important;
+                height: 60px !important;
+                object-fit: fill !important;
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 1399px) {
+
+            .buttons {
+                margin: 0 !important;
+                padding: 0 !important;
+            }
+
+
+            .btn-download-app {
+                margin: 0 !important;
+                padding: 0 !important;
+                background-color: transparent !important;
+                width: 328px !important;
+                height: 60px !important;
+            }
+
+            .dark-mode-image {
+                width: 328px !important;
+                height: 60px !important;
+                object-fit: fill !important;
+            }
+        }
+
+        @media (min-width: 1400px) {
+
+            .buttons {
+                margin: 0 !important;
+                padding: 0 !important;
+            }
+
+
+            .btn-download-app {
+                margin: 0 !important;
+                padding: 0 !important;
+                background-color: transparent !important;
+                width: 180px !important;
+                height: 52px !important;
+            }
+
+            .dark-mode-image {
+                width: 180px !important;
+                height: 52px !important;
+                object-fit: fill !important;
+            }
+        }
+
 }
 
 header.dark-mode {

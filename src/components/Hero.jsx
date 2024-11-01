@@ -13,12 +13,25 @@ const Hero = ({isDarkMode}) => {
                     <p>We offer you a new generation of the mobile banking. Save, spend & manage money in your
                         pocket.</p>
                     <div className="buttons">
-                        <a className="btn-download-app" href="#"><img src="/images/appstore.svg" alt="appstore" /></a>
-                        <a className="btn-download-app" href="#"><img src="/images/googleplay.svg" alt="googleplay" /></a>
+                    { !isDarkMode ? (
+                                    <>
+                                    <a className="btn-download-app" href="#"><img src="/images/appstore.svg" alt="appstore" /></a>
+                                    <a className="btn-download-app" href="#"><img src="/images/googleplay.svg" alt="googleplay" /></a>
+                                    </>
+                                ) : (
+                                    <>
+                                    <a className="btn-download-app" href="#"><img className="dark-mode-image" src="/images/appstore-dark.svg" alt="appstore" /></a>
+                                    <a className="btn-download-app" href="#"><img className="dark-mode-image" src="/images/googleplay-dark.svg" alt="googleplay" /></a>
+                                    </>
+                                )}
                     </div>
 
                     <a href="#" className="discover-more">
-                        <img className="dropdown-hero-closed" src="images/next-btn.svg" alt="discover more button" />
+                    { !isDarkMode ? (
+                                    <img className="dropdown-hero-closed" src="images/next-btn.svg" alt="discover more button" />
+                                ) : (
+                                    <img className="dropdown-hero-closed" src="images/next-btn-dark.svg" alt="discover more button" />
+                                )}
                         <span>Discover more</span>
                     </a>
                 </div>

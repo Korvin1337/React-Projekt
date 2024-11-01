@@ -68,7 +68,11 @@ const Faq = ({isDarkMode}) => {
                         <span className={`dropdown-span-${openIndex === index ? 'open' : 'closed'}`} key={item.id} onClick={() => toggleDropdown(index)}>
                             <div className="dropdown-span-h3-image">
                                 <h3 className="dropdown-span-h3">{item.title}</h3>
-                                <img className="dropdown-span-image" src={`/images/icon-dropdown-${openIndex === index ? 'open' : 'closed'}.svg`} alt="dropdown arrow" />
+                                { !isDarkMode ? (
+                                    <img className="dropdown-span-image" src={`/images/icon-dropdown-${openIndex === index ? 'open' : 'closed'}.svg`} alt="dropdown arrow" />
+                                ) : (
+                                    <img className="dropdown-span-image" src={`/images/icon-dropdown-dark-${openIndex === index ? 'open' : 'closed'}.svg`} alt="dropdown arrow" />
+                                )}
                             </div>
                             {openIndex === index && <p className="dropdown-span-text">{item.content}</p>}
                         </span>
