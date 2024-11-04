@@ -1,19 +1,21 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const Header = ({ toggleDarkMode, isDarkMode }) => {
     return (
-        <header  className={`${isDarkMode ? 'dark-mode' : ''}`}>
+        <header className={`${isDarkMode ? 'dark-mode' : ''}`}>
             <div className="container">
                 <a href="index.html"><img src="/images/logo.svg" alt="Silicion Logotype" /></a>
 
                 <nav id="main-menu" className="navbar">
-                    <a className="nav-link" href="#">Features</a>
+                    <Link to="/" className="nav-link" href="#">Features</Link>
+                    <Link to="/contact" className="nav-link" href="#">Contact</Link>
                 </nav>
 
                 <div id="darkmode-toggle-switch" className="btn-toggle-switch">
                     <span className="label">Dark mode</span>
                     <label htmlFor="darkmode-switch" className="toggle-switch">
-                        <input id="darkmode-switch" type="checkbox" checked={isDarkMode} onClick={toggleDarkMode}/>
+                        <input id="darkmode-switch" type="checkbox" checked={isDarkMode} onClick={toggleDarkMode} />
                         <span className="slider round"></span>
                     </label>
                 </div>

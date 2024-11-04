@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Slider = ({isDarkMode}) => {
+const Slider = ({ isDarkMode }) => {
     return (
         <section id="slider" className={`${isDarkMode ? 'dark-mode' : ''}`}>
             <div className="headline">

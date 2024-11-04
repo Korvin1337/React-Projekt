@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const Subscribe = ({isDarkMode}) => {
+const Subscribe = ({ isDarkMode }) => {
 
     const [email, setEmail] = useState('')
     const [isSubmitted, setIsSubmitted] = useState(false)
@@ -28,23 +28,23 @@ const Subscribe = ({isDarkMode}) => {
             <div className="container">
                 <div className="icon-bell-text">
                     <img className="icon-bell-image" src="/images/icon-bell.svg" alt="icon bell" />
-                        <h3 className="subscribe-heading">Subscribe to our newsletter to stay informed about latest updates
-                        </h3>
+                    <h3 className="subscribe-heading">Subscribe to our newsletter to stay informed about latest updates
+                    </h3>
                 </div>
                 <div className="icon-bell-text-tablet-mobile">
                     <img className="icon-bell-image" src="/images/icon-bell.svg" alt="icon bell" />
-                        <h3 className="subscribe-heading">Subscribe to our newsletter</h3>
+                    <h3 className="subscribe-heading">Subscribe to our newsletter</h3>
                 </div>
                 {!isSubmitted ? (
-                <div className="subscribe-input-div">
-                    <i className="fa-regular fa-envelope"></i>
-                    <input type="email" className="subscribe-input" placeholder="Your email" value={email} onChange={(e) => setEmail(e.target.value)} />
+                    <div className="subscribe-input-div">
+                        <i className="fa-regular fa-envelope"></i>
+                        <input type="email" className="subscribe-input" placeholder="Your email" value={email} onChange={(e) => setEmail(e.target.value)} />
                         <a id="email-button-inner" href="#" className="btn-primary" onClick={handleSubmit}>
                             <i className="center-text">
                                 <span className="contact-span-text">Subscribe</span>
                             </i>
                         </a>
-                </div> ) : (
+                    </div>) : (
                     <div className="subscribe-input-div">
                         <p className="center-text-subscribe">Thank you for subscribing!</p>
                     </div>

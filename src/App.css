@@ -12,7 +12,7 @@
     --clr-divider-border: #E2E5F1;
     --clr-secondary: #EFF2FC;
     --clr-light-bg: #D9D9D9;
-    --clr-slider-bg:  #F3F8FF;
+    --clr-slider-bg: #F3F8FF;
 
     --clr-white: #FFFFFF;
     --clr-black: #000000;
@@ -514,6 +514,7 @@ footer {
             }
 
             @media (min-width: 1000px) and (max-width: 1399px) {
+
                 #brand-3,
                 #brand-4,
                 #brand-5,
@@ -574,6 +575,7 @@ footer {
         .hidden {
             display: block !important;
         }
+
         .container {
             display: flex;
             justify-content: space-between;
@@ -2876,6 +2878,7 @@ footer {
 
 
 .dark-mode {
+
     h1,
     h2,
     h3,
@@ -2884,6 +2887,7 @@ footer {
     h6 {
         color: var(--clr-white) !important;
     }
+
     p {
         color: var(--clr-white) !important;
         opacity: .7 !important;
@@ -2957,16 +2961,16 @@ footer.dark-mode {
 }
 
 #hero.dark-mode {
-        background-color: #151822 !important;
+    background-color: #151822 !important;
 
-        .img-back,
-        .img-front {
-            z-index: auto !important;
-        }
+    .img-back,
+    .img-front {
+        z-index: auto !important;
+    }
 
-        .dropdown-hero-closed {
-            border-radius: 50% !important;
-        }
+    .dropdown-hero-closed {
+        border-radius: 50% !important;
+    }
 
 }
 
