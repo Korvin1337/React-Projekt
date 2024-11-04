@@ -15,7 +15,7 @@ const Header = ({ toggleDarkMode, isDarkMode }) => {
                 <div id="darkmode-toggle-switch" className="btn-toggle-switch">
                     <span className="label">Dark mode</span>
                     <label htmlFor="darkmode-switch" className="toggle-switch">
-                        <input id="darkmode-switch" type="checkbox" checked={isDarkMode} onClick={toggleDarkMode} />
+                        <input id="darkmode-switch" type="checkbox" checked={isDarkMode} onChange={toggleDarkMode} />
                         <span className="slider round"></span>
                     </label>
                 </div>

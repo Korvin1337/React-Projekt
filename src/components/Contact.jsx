@@ -20,7 +20,7 @@ const Contact = ({ isDarkMode }) => {
 
                 <div className="links">
                     <Link to="/" className="link-to">
-                        <i className="fa-thin fa-house"></i>
+                    <img className="dropdown-span-image" src={`/images/icon-house.svg`} alt="House Icon" />
                         <p className="links-text links-text-1">Homepage</p>
                     </Link>
                     <i className="fa-solid fa-angles-right"></i>
@@ -39,7 +39,7 @@ const Contact = ({ isDarkMode }) => {
                                 <img className="dropdown-span-image" src={`/images/icon-email.svg`} alt="Email Letter Icon" />
                             </div>
                             <div className="icon-txt">
-                                <h2 className="icon-content-h2">Email us</h2>
+                                <h3 className="icon-content-h2">Email us</h3>
                                 <p>Please feel free to drop us a line. We will respond as soon as possible.</p>
                                 <a href="#" className="icon-content-link">
                                     <p className="link-text">Leave a message</p>
@@ -53,7 +53,7 @@ const Contact = ({ isDarkMode }) => {
                                 <img className="dropdown-span-image" src={`/images/icon-careers.svg`} alt="Email Letter Icon" />
                             </div>
                             <div className="icon-txt">
-                                <h2 className="icon-content-h2">Careers</h2>
+                                <h3 className="icon-content-h2">Careers</h3>
                                 <p>Sit ac ipsum leo lorem magna nunc mattis maecenas non vestibulum.</p>
                                 <a href="#" className="icon-content-link">
                                     <p className="link-text">Send an application</p>
@@ -69,16 +69,19 @@ const Contact = ({ isDarkMode }) => {
                         <form className="contact-form-form" onSubmit={handleSubmit}>
                             <h2 className="contact-form-h2">Get Online Consultation</h2>
 
-                            <label className="input-label">
-                                <input type="text" className="input-text" placeholder="Full Name" value={fullName} onChange={(e) => setFullName(e.target.value)} />
+                            <label className="input-label" htmlFor="fullName">
+                                <p className="text-field">Full name</p>
+                                <input type="text" id="fullName" className="input-text" placeholder="Full Name" value={fullName} onChange={(e) => setFullName(e.target.value)} required />
                             </label>
 
-                            <label className="input-label">
-                                <input type="email" className="input-text" placeholder="Email Address" value={emailAddress} onChange={(e) => setEmailAddress(e.target.value)} />
+                            <label className="input-label" htmlFor="emailAddress">
+                                <p className="text-field">Email Address</p>
+                                <input type="email" id="emailAddress" className="input-text" placeholder="Email Address" value={emailAddress} onChange={(e) => setEmailAddress(e.target.value)} required />
                             </label>
 
-                            <label className="input-label">
-                                <select className="input-dropdown" value={specialist} onChange={(e) => setSpecialist(e.target.value)} required>
+                            <label className="input-label" htmlFor="specialist">
+                                <p className="text-field">Specialist</p>
+                                <select id="specialist" className="input-dropdown" value={specialist} onChange={(e) => setSpecialist(e.target.value)} required>
                                     <option value="" disabled>Select Specialist</option>
                                     <option value="Cardiologist">Cardiologist</option>
                                     <option value="Dentist">Dentist</option>
@@ -86,7 +89,7 @@ const Contact = ({ isDarkMode }) => {
                                 </select>
                             </label>
 
-                            <button className="input-button">Make an appointment</button>
+                            <button type="submit" className="btn-primary input-button">Make an appointment</button>
                         </form>
                     </div>
                     {/* END OF CHATGPT HELP WITH FORM */}

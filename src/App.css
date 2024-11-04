@@ -319,7 +319,7 @@ footer {
     }
 
     .dark-mode {
-        background-color: #0b0f19;
+        background-color: var(--clr-heading-dark);
         color: #FFFFFF;
         opacity: .5;
     }
@@ -2872,6 +2872,166 @@ footer {
             }
 
 
+        }
+    }
+}
+
+#contact {
+    background-color: #f3f6ff;
+
+    .links {
+        display: flex;
+    }
+
+    .contact-form {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .contact-form-content {
+        width: 636px;
+        height: 718px;
+        box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.1),0 6px 20px 0 rgba(0, 0, 0, 0.09) !important;
+        margin-top: 10rem;
+    }
+
+    .contact-form-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /*text-align: center;*/
+        width: 100%;
+
+
+        .contact-form-h2 {
+            font-size: 2rem;
+            text-align: start;
+            margin: 0 auto;
+            max-width: 80%;
+            margin-top: 3rem;
+        }
+
+        .input-label {
+            text-align: start;
+            margin: 0 auto;
+            margin-top: 2rem;
+
+            .input-text,
+            .input-dropdown {
+                width: 491px;
+                height: 52px;
+                border-radius: 8px;
+                border: 1px solid #D4D7E5;
+            }
+
+            #fullName,
+            #emailAddress,
+            #specialist {
+                border-radius: 10px;
+            }
+
+            #specialist {
+                background-color: var(--clr-white);
+            }
+        }
+
+        .text-field {
+            margin-bottom: .5rem;
+        }
+
+        .btn-primary {
+            margin-top: 8rem;
+            width: 491px;
+            height: 52px;
+            text-align: center;
+            border-radius: 8px;
+            border: 1px solid var(--clr-primary);
+            box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.1),0 3px 10px 0 rgba(0, 0, 0, 0.09) !important;
+        }
+
+        .btn-primary:hover {
+            cursor: pointer;
+            opacity: .8;
+        }
+    }
+
+    h2,
+    h3 {
+        color: var(--clr-heading-dark);
+        font-weight: 900;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+
+    p {
+        color: var(--clr-body-text);
+        font-size: 1rem;
+    }
+
+    .links-text-1,
+    .links-text-2 {
+        font-size: .875rem;
+    }
+
+    .links-text-1 {
+        color: var(--clr-muted-text);
+    }
+
+    .links-text-2 {
+        color: var(--clr-primary);
+    }
+
+    .link-text {
+        color: var(--clr-primary);
+        font-size: 1rem;
+    }
+
+    .contact-form-content {
+        background-color: var(--clr-white);
+
+        h2 {
+            color: var(--clr-heading-dark);
+            font-weight: 900;
+        }
+
+        p {
+            color: var(--clr-heading-dark);
+            font-weight: 600;
+        }
+    }
+
+}
+
+#location {
+    background-color: var(--clr-white);
+    display: flex;
+
+    .medical-center-info {
+        h2,
+        h3 {
+            color: var(--clr-heading-dark);
+            font-weight: 900;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        h3 {
+            font-size: 1rem;
+        }
+
+        p {
+            color: var(--clr-body-text);
+            font-size: 1rem;
         }
     }
 }
