@@ -264,6 +264,10 @@ header .container {
     gap: 1.5rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
+
+    .nav-link {
+        margin-left: 1rem;
+    }
 }
 
 header .btn-mobile:hover {
@@ -3276,6 +3280,32 @@ footer.dark-mode {
         border-radius: 50% !important;
     }
 
+}
+
+#contact.dark-mode {
+    background-color: #151822 !important;
+    background: linear-gradient(0deg, rgba(99, 102, 241, 0.09962487910721463) 0%, rgba(218, 70, 239, 0.054608801936796625) 42%, rgba(241, 244, 253, 0.06747053827120175) 83%);
+
+    .contact-form-content {
+        background-color: #19192b;
+
+        .btn-primary {
+            background-color: var(--clr-brand-btn) !important;
+            border: 1px solid var(--clr-shadow) !important;
+        }
+    }
+
+    .link-text {
+        color: var(--clr-primary) !important;
+    }
+
+    .fa-solid.fa-arrow-right {
+        opacity: .6;
+    }
+}
+
+#location.dark-mode {
+    background-color: #0b0f19 !important;
 }
 
 header.dark-mode {

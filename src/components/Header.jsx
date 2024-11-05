@@ -5,7 +5,7 @@ const Header = ({ toggleDarkMode, isDarkMode }) => {
     return (
         <header className={`${isDarkMode ? 'dark-mode' : ''}`}>
             <div className="container">
-                <a href="index.html"><img src="/images/logo.svg" alt="Silicion Logotype" /></a>
+                <a href="#"><img src="/images/logo.svg" alt="Silicion Logotype" /></a>
 
                 <nav id="main-menu" className="navbar">
                     <Link to="/" className="nav-link" href="#">Features</Link>

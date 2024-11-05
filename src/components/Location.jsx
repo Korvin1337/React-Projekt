@@ -70,7 +70,7 @@ const Location = ({ isDarkMode }) => {
 
                         <div className="medical-info-wrapper">
                             <img className="dropdown-span-image medical-info-img" src={`/images/icon-location.svg`} alt="Location Pin Icon" />
-                            <p className="medical-text">2464 Royal Ln. Mesa,New Jersey 45463</p>
+                            <p className="medical-text">2464 Royal Ln. Mesa, New Jersey 45463</p>
                         </div>
 
                         <div className="medical-info-wrapper">
