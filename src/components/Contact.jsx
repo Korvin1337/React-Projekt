@@ -19,8 +19,8 @@ const Contact = ({ isDarkMode }) => {
             <div className="container">
 
                 <div className="links">
-                    <Link to="/" className="link-to">
                     <img className="dropdown-span-image" src={`/images/icon-house.svg`} alt="House Icon" />
+                    <Link to="/" className="link-to">
                         <p className="links-text links-text-1">Homepage</p>
                     </Link>
                     <i className="fa-solid fa-angles-right"></i>
@@ -40,7 +40,7 @@ const Contact = ({ isDarkMode }) => {
                             </div>
                             <div className="icon-txt">
                                 <h3 className="icon-content-h2">Email us</h3>
-                                <p>Please feel free to drop us a line. We will respond as soon as possible.</p>
+                                <p className="p-text">Please feel free to drop us a line. We will respond as soon as possible.</p>
                                 <a href="#" className="icon-content-link">
                                     <p className="link-text">Leave a message</p>
                                     <i className="fa-solid fa-arrow-right"></i>
@@ -54,7 +54,7 @@ const Contact = ({ isDarkMode }) => {
                             </div>
                             <div className="icon-txt">
                                 <h3 className="icon-content-h2">Careers</h3>
-                                <p>Sit ac ipsum leo lorem magna nunc mattis maecenas non vestibulum.</p>
+                                <p className="p-text">Sit ac ipsum leo lorem magna nunc mattis maecenas non vestibulum.</p>
                                 <a href="#" className="icon-content-link">
                                     <p className="link-text">Send an application</p>
                                     <i className="fa-solid fa-arrow-right"></i>
@@ -71,18 +71,18 @@ const Contact = ({ isDarkMode }) => {
 
                             <label className="input-label" htmlFor="fullName">
                                 <p className="text-field">Full name</p>
-                                <input type="text" id="fullName" className="input-text" placeholder="Full Name" value={fullName} onChange={(e) => setFullName(e.target.value)} required />
+                                <input type="text" id="fullName" className="input-text" placeholder="" value={fullName} onChange={(e) => setFullName(e.target.value)} required />
                             </label>
 
                             <label className="input-label" htmlFor="emailAddress">
                                 <p className="text-field">Email Address</p>
-                                <input type="email" id="emailAddress" className="input-text" placeholder="Email Address" value={emailAddress} onChange={(e) => setEmailAddress(e.target.value)} required />
+                                <input type="email" id="emailAddress" className="input-text" placeholder="" value={emailAddress} onChange={(e) => setEmailAddress(e.target.value)} required />
                             </label>
 
                             <label className="input-label" htmlFor="specialist">
                                 <p className="text-field">Specialist</p>
                                 <select id="specialist" className="input-dropdown" value={specialist} onChange={(e) => setSpecialist(e.target.value)} required>
-                                    <option value="" disabled>Select Specialist</option>
+                                    <option value="" disabled></option>
                                     <option value="Cardiologist">Cardiologist</option>
                                     <option value="Dentist">Dentist</option>
                                     <option value="Therapist">Therapist</option>
