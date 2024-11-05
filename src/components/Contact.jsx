@@ -7,10 +7,40 @@ const Contact = ({ isDarkMode }) => {
     const [emailAddress, setEmailAddress] = useState('')
     const [specialist, setSpecialist] = useState('')
 
+
+    /* Check that the strings are not empty */
+    const validateString = (string) => {
+        return string.trim() !== '';
+    }
+
+    /* Check email address with a regex, help of chatgpt */
+    const validateEmail = (email) => {
+        const regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+        return regex.test(email);
+    }
+
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        console.log({ fullName, emailAddress, specialist });
+        if (!validateString(fullName)) {
+            console.log('Invalid full name. Please enter a valid full name');
+            return;
+        }
+
+        if (!validateEmail(emailAddress)) {
+            console.log('Invalid email. Please enter a valid email address');
+            return;
+        }
+
+        if (!validateString(specialist)) {
+            console.log('Invalid specialist, Please choose a valid specialist');
+            return;
+        }
+
+        console.log(fullName);
+        console.log(emailAddress);
+        console.log(specialist);
+        console.log('Validation complete!');
     }
 
     return (
