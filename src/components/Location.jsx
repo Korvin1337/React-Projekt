@@ -39,7 +39,7 @@ const Location = ({ isDarkMode }) => {
 
             <div className="container">
 
-                <div ref={mapRef} className="medical-center-picture google-maps" style={{ height: '400px', width: '100%' }}>
+                <div ref={mapRef} className="medical-center-picture google-maps" style={{ top: '1rem', width: '100%' }}>
 
                     {/*  PUT THE MAP HERE */}
 
@@ -48,24 +48,50 @@ const Location = ({ isDarkMode }) => {
                 <div className="medical-center-info">
                     <div className="medical-center-1">
                         <h2 className="medical-h2">Medical Center 1</h2>
-                        <i><p className="medical-text">4517 Washingston Ave, Manchester, Kentucky 39495</p></i>
-                        <i><p className="medical-text">(406) 555-0120</p></i>
-                        <i><h3 className="medical-h3">Mon-Fri: </h3><p className="medical-text">9:00 am - 22:00 am</p></i>
-                        <h3 className="medical-h3">Mon-Fri: </h3><p className="medical-text">9:00 am - 22:00 am</p>
+
+                        <div className="medical-info-wrapper">
+                            <img className="dropdown-span-image medical-info-img" src={`/images/icon-location.svg`} alt="Location Pin Icon" />
+                            <p className="medical-text">4517 Washingston Ave, Manchester, Kentucky 39495</p>
+                        </div>
+
+                        <div className="medical-info-wrapper">
+                            <img className="dropdown-span-image medical-info-img" src={`/images/icon-phone.svg`} alt="Phone Icon" />
+                            <p className="medical-text">(406) 555-0120</p>
+                        </div>
+
+                        <div className="medical-info-wrapper">
+                            <img className="dropdown-span-image medical-info-img medical-info-img-3" src={`/images/icon-time.svg`} alt="Clock Icon" />
+                            <h3 className="medical-h3 medical-h3-1">Mon-Fri: </h3><p className="medical-text medical-text-2">9:00 am - 22:00 am</p>
+                        </div>
+                        <h3 className="medical-h3 medical-h3-2">Mon-Fri: </h3><p className="medical-text medical-text-3">9:00 am - 22:00 am</p>
                     </div>
                     <div className="medical-center-2">
-                        <h2 className="medical-h2">Medical Center 1</h2>
-                        <i><p className="medical-text">2464 Royal Ln. Mesa,New Jersey 45463</p></i>
-                        <i><p className="medical-text">(406) 544-0123</p></i>
-                        <i><h3 className="medical-h3">Mon-Fri: </h3><p className="medical-text">9:00 am - 22:00 am</p></i>
-                        <h3 className="medical-h3">Mon-Fri: </h3><p className="medical-text">9:00 am - 22:00 am</p>
+                        <h2 className="medical-h2">Medical Center 2</h2>
+
+                        <div className="medical-info-wrapper">
+                            <img className="dropdown-span-image medical-info-img" src={`/images/icon-location.svg`} alt="Location Pin Icon" />
+                            <p className="medical-text">2464 Royal Ln. Mesa,New Jersey 45463</p>
+                        </div>
+
+                        <div className="medical-info-wrapper">
+                            <img className="dropdown-span-image medical-info-img" src={`/images/icon-phone.svg`} alt="Phone Icon" />
+                            <p className="medical-text">(406) 544-0123</p>
+                        </div>
+
+                        <div className="medical-info-wrapper">
+                            <img className="dropdown-span-image medical-info-img medical-info-img-3" src={`/images/icon-time.svg`} alt="Clock Icon" />
+                            <h3 className="medical-h3 medical-h3-1">Mon-Fri: </h3><p className="medical-text medical-text-2">9:00 am - 22:00 am</p>
+                        </div>
+                        <h3 className="medical-h3 medical-h3-2">Mon-Fri: </h3><p className="medical-text medical-text-3">9:00 am - 22:00 am</p>
                     </div>
 
                     <div className="socials">
-                        <img className="socials-image" src="/images/icon-facebook.svg" alt="facebook icon" />
-                        <img className="socials-image" src="/images/icon-twitter.svg" alt="twitter icon" />
-                        <img className="socials-image" src="/images/icon-instagram.svg" alt="instagram icon" />
-                        <img className="socials-image" src="/images/icon-youtube.svg" alt="youtube icon" />
+                        <div className="socials-wrapper">
+                            <img className="socials-image" src="/images/icon-facebook.svg" alt="facebook icon" />
+                            <img className="socials-image" src="/images/icon-twitter.svg" alt="twitter icon" />
+                            <img className="socials-image" src="/images/icon-instagram.svg" alt="instagram icon" />
+                            <img className="socials-image" src="/images/icon-youtube.svg" alt="youtube icon" />
+                        </div>
                     </div>
                 </div>
 

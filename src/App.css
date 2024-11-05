@@ -2940,6 +2940,8 @@ footer {
 
     .text-content {
 
+        margin-left: 4rem;
+
         .contact-us-h2 {
             font-size: 2.5rem;
             font-weight: 900;
@@ -3043,7 +3045,7 @@ footer {
         }
 
         .btn-primary {
-            margin-top: 8rem;
+            margin-top: 10rem;
             width: 491px;
             height: 52px;
             text-align: center;
@@ -3076,7 +3078,85 @@ footer {
 
 #location {
     background-color: var(--clr-white);
-    display: flex;
+    padding-top: 12rem;
+    margin-top: -6rem;
+    padding-bottom: 18rem;
+
+    .container {
+        display: flex;
+        gap: 5rem;
+    }
+
+    .medical-center-picture.google-maps {
+        margin-left: 5rem;
+    }
+
+    .medical-center-picture {
+        flex: 1;
+    }
+
+    .medical-center-info {
+        flex: 1;
+
+        .medical-center-1,
+        .medical-center-2,
+        .socials {
+            margin-left: 4rem;
+        }
+
+        .medical-info-wrapper {
+            display: flex;
+            margin-bottom: 1.5rem;
+
+            .medical-info-img-3,
+            .medical-h3 {
+                position: relative;
+                top: -1rem;
+            }
+        }
+
+        .medical-h2 {
+            margin-bottom: 1.5rem;
+        }
+
+        .medical-text,
+        .medical-h3-1 {
+            margin-left: .5rem;
+        }
+
+        .medical-h3-2 {
+            position: relative;
+            top: -3rem;
+            left: 1.7rem;
+        }
+
+        .medical-text-3 {
+            position: relative;
+            top: -5.5rem;
+            left: 5.9rem;
+        }
+
+        .socials {
+            margin-top: -1rem;
+        }
+
+        .socials-wrapper {
+            display: flex;
+            justify-content: space-between;
+            width: 40%;
+
+            .socials-image {
+                height: 50px;
+                width: auto;
+            }
+
+            .socials-image:hover {
+                cursor: pointer;
+                opacity: .8;
+            }
+        }
+
+    }
 
     .medical-center-info {
         h2,
