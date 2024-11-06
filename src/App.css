@@ -1900,6 +1900,15 @@ footer {
         }
 
     }
+
+    @media (min-width: 1px) and (max-width: 1399px) {
+        .dropdown-span-image {
+            min-width: 40px !important;
+            max-width: 40px !important;
+            margin-right: .5rem !important;
+            height: auto !important;
+        }
+    }
 }
 
 
