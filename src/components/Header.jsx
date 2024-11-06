@@ -39,7 +39,7 @@ const Header = ({ toggleDarkMode, isDarkMode }) => {
                 <button className="btn-mobile" onClick={handleMenuToggle}>
                     <i className="fa-solid fa-bars"></i>
 
-                    {/* Show if menu opens */}
+                    {/* Show if menu opens, help of chatgpt */}
                     {menuOpen && (
                         <nav className="hamburger-menu">
                             <Link to ="/" onClick={handleMenuToggle} className="hamburger-link hamburger-link-1">Features</Link>
