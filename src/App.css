@@ -736,7 +736,7 @@ footer {
     }
 
     .btn-mobile {
-        display: none;
+        display: none !important;
     }
 
     .center-text {
@@ -3296,6 +3296,91 @@ footer {
             color: var(--clr-body-text);
             font-size: 1rem;
         }
+    }
+
+    /* Fix layout etc for mobile devices */
+    @media(min-width: 1px) and (max-width: 1399px) {
+
+        .container {
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: center !important;
+            width: 100% !important;
+        }
+
+        .medical-center-info {
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: center !important;
+            width: 100% !important;
+        }
+
+        /*.medical-center-1,
+        .medical-center-2,
+        .socials  {
+            width: 100% !important;
+            margin: 0 auto !important;
+        }*/
+
+    }
+
+    @media (min-width: 1px) and (max-width: 449px) {
+
+        .medical-center-1,
+        .medical-center-2,
+        .socials  {
+            height: 300px !important;
+            width: 300px !important;
+            /* margin: 0 auto !important; */
+        }
+
+        .medical-text {
+            max-width: 22ch;
+        }
+
+        .socials {
+            margin-top: 5rem !important;
+            margin-left: 6.4rem !important;
+            margin-bottom: -10rem !important;
+        }
+
+    }
+
+    @media (min-width: 450px) and (max-width: 767px) {
+
+        .medical-center-1,
+        .medical-center-2,
+        .socials  {
+            height: 300px !important;
+            width: 280px !important;
+            /* FIXA EN MARGIN RIGHT PÅ MEDICAL CENTER -1 -2 ? */
+            /* margin: 0 auto !important; */
+        }
+
+        .socials {
+            margin-top: 5rem !important;
+            margin-left: 6.4rem !important;
+            margin-bottom: -10rem !important;
+        }
+
+    }
+
+    @media (min-width: 768px) and (max-width: 1399px) {
+
+        .medical-center-1,
+        .medical-center-2,
+        .socials  {
+            height: 300px !important;
+            width: 300px !important;
+            /* margin: 0 auto !important; */
+        }
+
+        .socials {
+            margin-top: 5rem !important;
+            margin-left: 6.4rem !important;
+            margin-bottom: -10rem !important;
+        }
+
     }
 }
 

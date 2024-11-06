@@ -86,12 +86,22 @@ const Location = ({ isDarkMode }) => {
                     </div>
 
                     <div className="socials">
+                        {/* Chatgpt help add a href to images */}
                         <div className="socials-wrapper">
-                            <img className="socials-image" src="/images/icon-facebook.svg" alt="facebook icon" />
-                            <img className="socials-image" src="/images/icon-twitter.svg" alt="twitter icon" />
-                            <img className="socials-image" src="/images/icon-instagram.svg" alt="instagram icon" />
-                            <img className="socials-image" src="/images/icon-youtube.svg" alt="youtube icon" />
+                            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                                <img className="socials-image" src="/images/icon-facebook.svg" alt="facebook icon" />
+                            </a>
+                            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+                                <img className="socials-image" src="/images/icon-twitter.svg" alt="twitter icon" />
+                            </a>
+                            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                                <img className="socials-image" src="/images/icon-instagram.svg" alt="instagram icon" />
+                            </a>
+                            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+                                <img className="socials-image" src="/images/icon-youtube.svg" alt="youtube icon" />
+                            </a>
                         </div>
+
                     </div>
                 </div>
 
