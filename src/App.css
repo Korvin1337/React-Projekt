@@ -3135,6 +3135,64 @@ footer {
         }
     }
 
+    /* Fix layout for mobile devices */
+    @media(min-width: 1px) and (max-width: 1399px) {
+
+        .container {
+
+            .contact-form {
+                flex-direction: column !important;
+                align-items: center !important;
+
+                .text-content {
+                    margin-left: 0;
+                }
+
+                .contact-form-content {
+                    width: 100% !important;
+                    height: 718px !important;
+
+                    .contact-form-h2 {
+                        text-align: center !important;
+                    }
+
+                    .input-label {
+                        width: 80% !important;
+                    }
+
+                    .text-field,
+                    #fullName,
+                    #emailAddress,
+                    #specialist {
+                        width: 100% !important;
+                    }
+
+                    .btn-primary.input-button {
+                        width: 80% !important;
+                    }
+
+                    .btn-primary.input-button:hover {
+                        cursor: pointer !important;
+                        opacity: .8 !important;
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    @media(min-width: 767px) and (max-width: 1399px) {
+
+        .container {
+
+            .text-content {
+                margin-top: 2rem !important;
+            }
+
+        }
+    }
+
 }
 
 #location {
