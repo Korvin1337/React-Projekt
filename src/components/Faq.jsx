@@ -1,15 +1,17 @@
 import React, { useState, useEffect } from 'react';
 
 const Faq = ({ isDarkMode }) => {
-    /* ChatGPT */
+    /* ChatGPT 4o help add javascript to my old css/html code */
     const [faqs, setFaqs] = useState([]);
     const [openIndex, setOpenIndex] = useState(null);
 
+    // Updates the state of the dropdowns, if it should be open or not */
     const toggleDropdown = (index) => {
         setOpenIndex(openIndex === index ? null : index);
     };
 
     // Fetch FAQs from the API
+    // Async function getting data from the API, throws error or returns the data
     useEffect(() => {
         const fetchFaqs = async () => {
             try {
@@ -64,10 +66,12 @@ const Faq = ({ isDarkMode }) => {
                 </div>
 
                 <div className="dropdown-questions">
+                    {/* Open or close the dropdown depending on it's state */}
                     {faqs.map((item, index) => (
                         <span className={`dropdown-span-${openIndex === index ? 'open' : 'closed'}`} key={item.id} onClick={() => toggleDropdown(index)}>
                             <div className="dropdown-span-h3-image">
                                 <h3 className="dropdown-span-h3">{item.title}</h3>
+                                {/* Check if darkmode or not, "conditional rendering". Change color of dropdown */}
                                 {!isDarkMode ? (
                                     <img className="dropdown-span-image" src={`/images/icon-dropdown-${openIndex === index ? 'open' : 'closed'}.svg`} alt="dropdown arrow" />
                                 ) : (
@@ -129,4 +133,4 @@ const Faq = ({ isDarkMode }) => {
 
 export default Faq
 
-/* End of Chatgpt, Chatgpt converted my old code to work with the javascript code it made. */
+/* End of Chatgpt, Chatgpt4o converted my old code to work with the javascript code it made. */

@@ -19,6 +19,7 @@ const Contact = ({ isDarkMode }) => {
         return regex.test(email);
     }
 
+    /* Checks if the contact information is correct or if something is wrong/missing, logs a fitting message. */
     const handleSubmit = (e) => {
         e.preventDefault();
 
@@ -94,7 +95,8 @@ const Contact = ({ isDarkMode }) => {
 
                     </div>
 
-                    {/* CHATGPT HELP WITH FORM */}
+                    {/* CHATGPT 4o HELP WITH FORM */}
+                    {/* Handles the submit with the javascript function, Using states (onChange) to update the information(value) that gets sent to the function. */}
                     <div className="contact-form-content">
                         <form className="contact-form-form" onSubmit={handleSubmit}>
                             <h2 className="contact-form-h2">Get Online Consultation</h2>
@@ -122,7 +124,7 @@ const Contact = ({ isDarkMode }) => {
                             <button type="submit" className="btn-primary input-button">Make an appointment</button>
                         </form>
                     </div>
-                    {/* END OF CHATGPT HELP WITH FORM */}
+                    {/* END OF CHATGPT 4o HELP WITH FORM */}
 
                 </div>
 

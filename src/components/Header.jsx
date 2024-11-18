@@ -40,6 +40,7 @@ const Header = ({ toggleDarkMode, isDarkMode }) => {
                     <i className="fa-solid fa-bars"></i>
 
                     {/* Show if menu opens, help of chatgpt */}
+                    {/* Uses the function handleMenuToggle to open the menu using states */}
                     {menuOpen && (
                         <nav className="hamburger-menu">
                             <Link to ="/" onClick={handleMenuToggle} className="hamburger-link hamburger-link-1">Features</Link>

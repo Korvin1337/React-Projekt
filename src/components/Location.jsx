@@ -1,9 +1,10 @@
 import React, { useRef, useEffect } from 'react';
 
 const Location = ({ isDarkMode }) => {
-    /* Chat gpt help google maps part */
+    /* ChatGPT 4o help google maps part */
     const mapRef = useRef(null)
 
+    /* Using states to implement google maps showing a specific location of that map with a pin */
     useEffect(() => {
         const initMap = () => {
             const location = { lat: 37.7749, lng: -122.4194 }
@@ -32,7 +33,7 @@ const Location = ({ isDarkMode }) => {
         }
 
     }, [])
-    /* End of chatgpt help */
+    /* End of ChatGPT 4o help */
 
     return (
         <section id="location" className={`${isDarkMode ? 'dark-mode' : ''}`}>
@@ -41,7 +42,7 @@ const Location = ({ isDarkMode }) => {
 
                 <div ref={mapRef} className="medical-center-picture google-maps" style={{ top: '1rem', width: '100%' }}>
 
-                    {/*  PUT THE MAP HERE */}
+                    {/*  PUT THE MAP HERE Chat GPT4o */}
 
                 </div>
 
@@ -86,7 +87,8 @@ const Location = ({ isDarkMode }) => {
                     </div>
 
                     <div className="socials">
-                        {/* Chatgpt help add a href to images */}
+                        {/* Chatgpt 4o help add a href to images */}
+                        {/* Help to style the images correctly while being links to their respective sites */}
                         <div className="socials-wrapper">
                             <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
                                 <img className="socials-image" src="/images/icon-facebook.svg" alt="facebook icon" />

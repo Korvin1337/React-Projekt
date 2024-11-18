@@ -5,13 +5,13 @@ const Subscribe = ({ isDarkMode }) => {
     const [email, setEmail] = useState('')
     const [isSubmitted, setIsSubmitted] = useState(false)
 
-    /* Chat gpt regex test */
+    /* ChatGPT 4o made regex to checks for non white spaces, checks for @ and . symbol, checks for length, checks for end.  */
     const validateEmail = (email) => {
         if (email.length <= 0) return false
         const regex = /^[^\s@]{1,}@[^.\s@]{1,}\.[^\s@]{2,}.{0,47}$/;
         return regex.test(email);
     }
-    /* End of chatgpt regex test */
+    /* End of ChatGPT 4o regex test */
 
     const handleSubmit = (e) => {
         e.preventDefault();
